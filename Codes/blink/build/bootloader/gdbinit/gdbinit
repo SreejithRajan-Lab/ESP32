@@ -1,0 +1,2 @@
+source C:/Users/sreej/ESP32/Codes/blink/build/bootloader/gdbinit/symbols
+source C:/Users/sreej/ESP32/Codes/blink/build/bootloader/gdbinit/connect
