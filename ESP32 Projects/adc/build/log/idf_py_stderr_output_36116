@@ -1,0 +1,11 @@
+Command: ninja all
+fatal: bad config line 2 in file C:/esp/v6.0/esp-idf/.git/modules/components/bootloader/subproject/components/micro-ecc/micro-ecc/config
+Configuration Report               
++---------------------------------+
+|  Parser Version: 1              |
+|  Verbosity: default             |
+|  Defaults policy: sdkconfig     |
+|  Status: Finished successfully  |
+|                                 |
++---------------------------------+
+fatal: bad config line 2 in file C:/esp/v6.0/esp-idf/.git/modules/components/openthread/openthread/config
