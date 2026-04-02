@@ -1,0 +1,622 @@
+Command: C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe C:\esp\v6.0\esp-idf\tools/idf_monitor.py -p com10 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 C:\Users\sreej\OneDrive\Desktop\ESP32\ESP32 Projects\wifi\build\wifi.elf C:\Users\sreej\OneDrive\Desktop\ESP32\ESP32 Projects\wifi\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v6.0\venv\Scripts\python.exe' 'C:\esp\v6.0\esp-idf\tools\idf.py' '-p' 'com10'
+eets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6272
+load:0x40078000,len:15848
+load:0x40080400,len:3920
+entry 0x40080644
+[0;32mI (27) boot: ESP-IDF -128-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 27 2026 18:14:03[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v3.1[0m
+[0;32mI (32) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (36) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=194f0h (103664) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=00029518 vaddr=3ffb0000 size=04528h ( 17704) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=0002da48 vaddr=40080000 size=025d0h (  9680) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=83ba8h (539560) map[0m
+[0;32mI (328) esp_image: segment 4: paddr=000b3bd0 vaddr=400825d0 size=13028h ( 77864) load[0m
+[0;32mI (359) esp_image: segment 5: paddr=000c6c00 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (370) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (371) boot: Disabling RNG early entropy source...[0m
+[0;32mI (381) cpu_start: Multicore app[0m
+[0;32mI (389) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (390) cpu_start: Pro cpu start user code[0m
+[0;32mI (390) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (391) app_init: Application information:[0m
+[0;32mI (395) app_init: Project name:     wifi[0m
+[0;32mI (399) app_init: App version:      6e0b81e[0m
+[0;32mI (403) app_init: Compile time:     Mar 27 2026 18:13:44[0m
+[0;32mI (408) app_init: ELF file SHA256:  20c53e230...[0m
+[0;32mI (412) app_init: ESP-IDF:          -128-NOTFOUND[0m
+[0;32mI (417) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (420) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (424) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (429) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (435) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (440) heap_init: At 3FFB8968 len 00027698 (157 KiB): DRAM[0m
+[0;32mI (445) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (450) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (456) heap_init: At 400955F8 len 0000AA08 (42 KiB): IRAM[0m
+[0;32mI (463) spi_flash: detected chip: generic[0m
+[0;32mI (465) spi_flash: flash io: dio[0m
+[0;33mW (468) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (482) main_task: Started on CPU0[0m
+[0;32mI (492) main_task: Calling app_main()[0m
+[0;32mI (522) wifi:wifi driver task: 3ffc03e8, prio:23, stack:6656, core=0[0m
+[0;32mI (532) wifi:wifi firmware version: 44738b4[0m
+[0;32mI (532) wifi:wifi certification version: v7.0[0m
+[0;32mI (532) wifi:config NVS flash: enabled[0m
+[0;32mI (532) wifi:config nano formatting: disabled[0m
+[0;32mI (542) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (542) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (542) wifi:Init management short buffer num: 32[0m
+[0;32mI (552) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (552) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (562) wifi:Init static rx buffer num: 10[0m
+[0;32mI (562) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (572) wifi_init: rx ba win: 6[0m
+[0;32mI (572) wifi_init: accept mbox: 6[0m
+[0;32mI (572) wifi_init: tcpip mbox: 32[0m
+[0;32mI (572) wifi_init: udp mbox: 6[0m
+[0;32mI (582) wifi_init: tcp mbox: 6[0m
+[0;32mI (582) wifi_init: tcp tx win: 5760[0m
+[0;32mI (582) wifi_init: tcp rx win: 5760[0m
+[0;32mI (592) wifi_init: tcp mss: 1440[0m
+[0;32mI (592) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (592) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (602) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (662) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (742) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (772) wifi:mode : sta (14:2b:2f:c8:f3:0c)[0m
+[0;32mI (772) wifi:enable tsf[0m
+WiFi Started
+[0;32mI (1202) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1202) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1212) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1222) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1262) wifi:connected with Rajan, aid = 1, channel 1, BW20, bssid = 86:2b:8d:7f:12:bf[0m
+[0;32mI (1262) wifi:security: WPA2-PSK, phy: bgn, rssi: -24[0m
+[0;32mI (1302) wifi:pm start, type: 1[0m
+
+[0;32mI (1302) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1352) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1352) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2342) esp_netif_handlers: sta ip: 192.168.87.53, mask: 255.255.255.0, gw: 192.168.87.140[0m
+Connected!
+Got IP: 192.168.87.53
+[0;32mI (652192) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (654692) wifi:ap_probe_send over, reset wifi status to disassoc[0m
+[0;32mI (654692) wifi:state: run -> init (0xc800)[0m
+[0;32mI (654702) wifi:pm stop, total sleep time: 612202019 us / 653398151 us[0m
+
+[0;32mI (654702) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+Disconnected, reason: 200
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+[0;32mI (968892) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (968892) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (968912) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (968942) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (973062) wifi:state: run -> init (0xfa0)[0m
+[0;32mI (973072) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+Disconnected, reason: 15
+Disconnected, reason: 205
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+[0;32mI (1011762) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1011762) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1011782) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1011802) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1015812) wifi:state: run -> init (0xfa0)[0m
+[0;32mI (1015822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+Disconnected, reason: 15
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+[0;32mI (1030342) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1030342) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1030352) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1030372) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1032432) wifi:connected with Rajan, aid = 4, channel 1, BW20, bssid = 86:2b:8d:7f:12:bf[0m
+[0;32mI (1032432) wifi:security: WPA2-PSK, phy: bgn, rssi: -89[0m
+[0;32mI (1032432) wifi:pm start, type: 1[0m
+
+[0;32mI (1032432) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1032762) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1032762) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1041072) esp_netif_handlers: sta ip: 192.168.87.53, mask: 255.255.255.0, gw: 192.168.87.140[0m
+Connected!
+Got IP: 192.168.87.53
+[0;32mI (2191732) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (2194232) wifi:ap_probe_send over, reset wifi status to disassoc[0m
+[0;32mI (2194232) wifi:state: run -> init (0xc800)[0m
+[0;32mI (2194242) wifi:pm stop, total sleep time: 1106297881 us / 1161805179 us[0m
+
+[0;32mI (2194242) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+Disconnected, reason: 200
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+[0;32mI (2218432) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2218432) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2218442) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2218492) wifi:state: assoc -> init (0x4a0)[0m
+[0;32mI (2218502) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+Disconnected, reason: 4
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+[0;32mI (2643862) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2643862) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2643892) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2643912) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2643972) wifi:connected with Rajan, aid = 6, channel 1, BW20, bssid = 86:2b:8d:7f:12:bf[0m
+[0;32mI (2643982) wifi:security: WPA2-PSK, phy: bgn, rssi: -95[0m
+[0;32mI (2643982) wifi:pm start, type: 1[0m
+
+[0;32mI (2643982) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2643992) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2644002) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2645052) esp_netif_handlers: sta ip: 192.168.87.53, mask: 255.255.255.0, gw: 192.168.87.140[0m
+Connected!
+Got IP: 192.168.87.53
+[0;32mI (2653982) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (2656482) wifi:ap_probe_send over, reset wifi status to disassoc[0m
+[0;32mI (2656482) wifi:state: run -> init (0xc800)[0m
+[0;32mI (2656492) wifi:pm stop, total sleep time: 1880436 us / 12507136 us[0m
+
+[0;32mI (2656492) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+Disconnected, reason: 200
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+[0;32mI (2668672) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2668672) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2669682) wifi:state: auth -> init (0x200)[0m
+[0;32mI (2669692) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+Disconnected, reason: 2
+Disconnected, reason: 201
+Disconnected, reason: 201
+[0;32mI (2674532) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2674542) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2674552) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2674562) wifi:Association refused temporarily time 1000, comeback time 1100 (TUs)[0m
+[0;32mI (2675682) wifi:state: assoc -> assoc (0x0)[0m
+[0;32mI (2675722) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2676802) wifi:connected with Rajan, aid = 7, channel 1, BW20, bssid = 86:2b:8d:7f:12:bf[0m
+[0;32mI (2676802) wifi:security: WPA2-PSK, phy: bgn, rssi: -91[0m
+[0;32mI (2676812) wifi:pm start, type: 1[0m
+
+[0;32mI (2676812) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2677472) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2677472) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2681402) esp_netif_handlers: sta ip: 192.168.87.53, mask: 255.255.255.0, gw: 192.168.87.140[0m
+Connected!
+Got IP: 192.168.87.53
+[0;32mI (4363312) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (4365812) wifi:ap_probe_send over, reset wifi status to disassoc[0m
+[0;32mI (4365812) wifi:state: run -> init (0xc800)[0m
+[0;32mI (4365822) wifi:pm stop, total sleep time: 1622749782 us / 1689011955 us[0m
+
+[0;32mI (4365822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+Disconnected, reason: 200
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+[0;32mI (4375502) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4375512) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4375522) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4376522) wifi:state: assoc -> init (0x400)[0m
+[0;32mI (4376532) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+Disconnected, reason: 4
+Disconnected, reason: 205
+[0;32mI (4378962) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4378962) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4378972) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4378982) wifi:Association refused temporarily time 1000, comeback time 1100 (TUs)[0m
+[0;32mI (4380102) wifi:state: assoc -> assoc (0x0)[0m
+[0;32mI (4380122) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4380182) wifi:connected with Rajan, aid = 8, channel 1, BW20, bssid = 86:2b:8d:7f:12:bf[0m
+[0;32mI (4380182) wifi:security: WPA2-PSK, phy: bgn, rssi: -91[0m
+[0;32mI (4380192) wifi:pm start, type: 1[0m
+
+[0;32mI (4380192) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4380242) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (4380242) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (4381272) esp_netif_handlers: sta ip: 192.168.87.53, mask: 255.255.255.0, gw: 192.168.87.140[0m
+Connected!
+Got IP: 192.168.87.53
+[0;32mI (4390522) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (4393022) wifi:ap_probe_send over, reset wifi status to disassoc[0m
+[0;32mI (4393022) wifi:state: run -> init (0xc800)[0m
+[0;32mI (4393032) wifi:pm stop, total sleep time: 1937113 us / 12839919 us[0m
+
+[0;32mI (4393032) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+Disconnected, reason: 200
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+Disconnected, reason: 201
+[0;32mI (4484882) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4484882) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4484922) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4484932) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4491722) wifi:bcn_timeout,ap_probe_send_start[0m
